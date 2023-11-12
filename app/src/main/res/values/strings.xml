@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CatalogAI</string>
+    <string name="mostPopularAI">Популярные AI</string>
+    <string name="hello_string">Добро пожаловать в CatalogAI!\nЗдесь вы можете получить доступ к самым популярным и самым новым нейронным сетям.</string>
+    <string name="next">Далее</string>
+    <string name="emailOrLogin">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="auth">Авторизация</string>
+    <string name="notProfile">Нет аккаунта?</string>
+    <string name="createProfile">Создайте!</string>
+    <string name="register">Регистрация</string>
+    <string name="email">Электронная почта</string>
+    <string name="loginText">Логин</string>
+    <string name="registerText">Зарегистрироваться</string>
+    <string name="favNeuro">Самые популярные</string>
+</resources>

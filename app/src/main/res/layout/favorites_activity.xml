@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050B18"
+    tools:context=".FavoritesActivity">
+
+    <TextView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/favView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jetbrains_mono_bold"
+        android:text="@string/favNeuro"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ctgBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/favBtn"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="@+id/nav"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/categories" />
+
+    <ImageView
+        android:id="@+id/favBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="@+id/nav"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/favorities" />
+
+    <ImageView
+        android:id="@+id/profBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:srcCompat="@drawable/profile" />
+
+    <Button
+        android:id="@+id/chatgpt"
+        android:layout_width="223dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/jetbrains_mono_bold"
+        android:text="ChatGPT"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/favView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/midjourney" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="223dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/jetbrains_mono_bold"
+        android:text="Midjourney"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/chatgpt" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favView"
+        app:srcCompat="@drawable/chatgpt" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="223dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/jetbrains_mono_bold"
+        android:text="Descript"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/descript" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
